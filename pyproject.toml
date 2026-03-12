@@ -5,7 +5,9 @@ description = "AI demos using multiple providers."
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
+    "aiohttp>=3.13.3",
     "anthropic",
+    "fastapi>=0.135.1",
     "openai",
     "opensandbox",
     "pydantic>=2.0",
