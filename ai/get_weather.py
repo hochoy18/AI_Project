@@ -3,12 +3,13 @@ import json
 import requests
 from openai import OpenAI
 
+from env import ARK_API_KEY, ARK_BASE_URL
+
 #  https://api.open-meteo.com/v1/forecast?latitude=40.7128&longitude=-74.0060&current_weather=true
-api_key = "973 7"
 
 client = OpenAI(
-    base_url="https://ark.cn-beijing.volces.com/api/v3",
-    api_key=api_key,
+    base_url=ARK_BASE_URL,
+    api_key=ARK_API_KEY,
 )
 model="doubao-seed-1-8-251228"
 

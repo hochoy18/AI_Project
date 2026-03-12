@@ -8,6 +8,7 @@ dependencies = [
     "anthropic",
     "openai",
     "opensandbox",
+    "python-dotenv>=1.2.2",
     "requests",
 ]
 

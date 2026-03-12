@@ -1,13 +1,13 @@
 import os
 from openai import OpenAI
 
+from env import ARK_API_KEY, ARK_BASE_URL
+
 # 从环境变量中获取您的API KEY，配置方法见：https://www.volcengine.com/docs/82379/1399008
-# api_key = os.getenv('ARK_API_KEY')
-api_key = " "
 
 client = OpenAI(
-    base_url="https://ark.cn-beijing.volces.com/api/v3",
-    api_key=api_key,
+    base_url=ARK_BASE_URL,
+    api_key=ARK_API_KEY,
 )
 
 response = client.responses.create(
