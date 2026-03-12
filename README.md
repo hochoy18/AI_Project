@@ -40,15 +40,20 @@ uv add --extra chromadb langchain  # 方式二：将 langchain 的 chromadb extr
 ```
 
 
+
+
+```shell
 - 运行脚本（示例）：
-```
 uv run python ai/claude_demo.py
  
-- 固定 Python 版本（可选）：
-``` 
+## 固定 Python 版本（可选）：
 uv python pin 3.11
-```
-- 在需要时激活虚拟环境：
-```
+
+# 在需要时激活虚拟环境：
 source .venv/bin/activate
+```
+
+
+```shell
+git rm -r --cached .idea
 ```
