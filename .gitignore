@@ -136,6 +136,7 @@ celerybeat.pid
 
 # SageMath parsed files
 *.sage.py
+# add .commit file for commit token
 .commit
 # Environments
 .env
